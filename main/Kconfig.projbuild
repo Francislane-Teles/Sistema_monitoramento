@@ -1,0 +1,21 @@
+menu "Configuracoes da Estufa"
+
+    config ESTUFA_DHT11_PIN
+        int "Pino GPIO do DHT11"
+        default 4
+        help
+            Pino de dados conectado ao sensor DHT11.
+
+    config ESTUFA_LDR_CHANNEL
+        int "Canal ADC do LDR (ADC1)"
+        default 2
+        help
+            Canal do ADC1 conectado ao LDR.
+
+    config ESTUFA_DEFAULT_SETPOINT
+        int "Set Point Padrao de Temperatura (C)"
+        default 25
+        help
+            Temperatura alvo inicial da estufa.
+
+endmenu
